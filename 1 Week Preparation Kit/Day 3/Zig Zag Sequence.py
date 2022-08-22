@@ -10,11 +10,11 @@ def findZigZagSequence(a, n):
         st = st + 1
         ed = ed - 1
 
-    for i in range (n):
+    for i in range(n):
         if i == n-1:
             print(a[i])
         else:
-            print(a[i], end = ' ')
+            print(a[i], end=' ')
     return
 
 
