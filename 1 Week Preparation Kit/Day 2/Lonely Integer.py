@@ -1,7 +1,6 @@
 def lonelyinteger(a):
     for element in a:
-        if a.count(element) == 1:
-            return element
+        return element if a.count(element) == 1 else None
 
 
 if __name__ == '__main__':
