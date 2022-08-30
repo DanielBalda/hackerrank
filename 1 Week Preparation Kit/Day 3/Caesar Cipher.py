@@ -1,8 +1,6 @@
 def caesarCipher(s, k):
-    abc = []
-    s = list(s)
-    for index in range(26):
-        abc.append(chr(index+97))
+    abc, s = [], list(s)
+    [abc.append(chr(index+97)) for index in range(26)]
     for index, letter in enumerate(s):
         if letter.lower() in abc:
             if letter.isupper():
